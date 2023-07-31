@@ -13,7 +13,8 @@ children:
 [
   {path:'component1', component: FirstComponent},
   {path:'component2', component: SecondComponent}
-]}
+]},
+{path:'**', redirectTo:'/home',pathMatch:'full'}
 ];
 
 @NgModule({
