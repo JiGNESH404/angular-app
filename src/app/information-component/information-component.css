@@ -1,0 +1,63 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+  }
+  
+.container {
+    display: flex;
+    height: 100%;
+  }
+
+  .sidebar {
+    flex: 0 0 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    padding: 10px 0;  
+  }
+
+  .button-inactive{
+    text-align: center;
+    display: block;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #ffffff;
+    color: rgb(59, 130, 246);    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .button-inactive:hover{
+    background-color: rgb(229, 231, 235);
+  }
+  .button-active{
+    text-align: center;
+    display: block;
+    border-width: 1px;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    color: #ffffff;
+    padding-left: 16px;
+    background-color: rgb(59, 130, 246);
+    
+  }
+  .button-active:hover{
+    background-color: rgb(29, 78, 216);
+  }

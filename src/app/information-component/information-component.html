@@ -1,0 +1,36 @@
+<html>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <table>
+            <tr class="my-4">
+              <td>Row 1</td>
+            </tr>
+            <hr>
+            <tr class="my-4">
+              <td>Row 2</td>
+            </tr>
+            <hr>
+            <tr class="my-4">
+              <td>Row 3</td>
+            </tr>
+          </table>
+    </div>
+    <div class="main-content">
+      <div id="nav-items">
+        <ul class="flex">
+          <li class=" mr-2">
+            <a [routerLink]="['component1']" [ngClass]="{'button-active': isActive('component1'), 'button-inactive': !isActive('component1')}">component1</a>
+          </li>
+          <li class=" mr-2">
+            <a [routerLink]="['component2']" [ngClass]="{'button-active': isActive('component2'), 'button-inactive': !isActive('component2')}">component2</a>
+          </li>
+      </ul>
+      </div>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
