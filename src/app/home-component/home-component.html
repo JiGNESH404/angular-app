@@ -1,15 +1,21 @@
-<div class="flex flex-col">
-    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-      <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-        <div class="overflow-hidden">
+<div class="flex flex-col sm:px-6 lg:px-4">
+  <div id="header-content">
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl">Lorem Ipsum</h1>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">At vero eos et accusamus et iusto odio dignissimos ducimus qui.</p>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Fugiat quo voluptas nulla pariatur?.</p>
+  </div>
+    <div>
+      <div class="inline-block min-w-full">
+        <div class="overflow-y-auto max-h-[450px]">
           <table class="min-w-full text-left">
-            <thead class="border header">
+            <thead class="sticky border header top-0">
               <tr>
-                <th scope="col" class="px-6 py-4">Sr. No</th>
-                <th scope="col" class="px-6 py-4">First Name</th>
-                <th scope="col" class="px-6 py-4">Last Name</th>
-                <th scope="col" class="px-6 py-4">City</th>
-                <th scope="col" class="px-6 py-4">Age</th>
+                <th scope="col" class="border px-6 py-3">Sr. No</th>
+                <th scope="col" class="border px-6 py-3">First Name</th>
+                <th scope="col" class="border px-6 py-3">Last Name</th>
+                <th scope="col" class="border px-6 py-3">City</th>
+                <th scope="col" class="border px-6 py-3">Age</th>
               </tr>
             </thead>
             <tbody>
@@ -37,7 +43,7 @@
               <tr class="border">
                 <td class="table-content ">4</td>
                 <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Lucifer</a></td>
-                <td class="table-content">Some long text lorem ipsum aysgd At vero eos et accusamus et iusto</td>
+                <td class="table-content">accusamus</td>
                 <td class="table-content">Bangalore</td>
                 <td class="table-content">95</td>
               </tr>
@@ -50,7 +56,7 @@
               </tr>
               <tr class="border">
                 <td class="table-content ">6</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">At vero eos et accusamus et iusto</a></td>
+                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">iusto</a></td>
                 <td class="table-content">Wild</td>
                 <td class="table-content">Mumbai</td>
                 <td class="table-content">35</td>
@@ -76,6 +82,21 @@
                 <td class="table-content">Chicago</td>
                 <td class="table-content">27</td>
               </tr>
+              <tr class="border">
+                <td class="table-content ">10</td>
+                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Amber</a></td>
+                <td class="table-content">Heard</td>
+                <td class="table-content">Pennsylvania</td>
+                <td class="table-content">52</td>
+              </tr>
+              <tr class="border">
+                <td class="table-content ">11</td>
+                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Nimesh</a></td>
+                <td class="table-content">Patel</td>
+                <td class="table-content">Long Island</td>
+                <td class="table-content">27</td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
