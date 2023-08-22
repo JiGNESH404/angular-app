@@ -4,6 +4,7 @@ import { HomeComponent } from './home-component/home-component';
 import { InformationComponent } from './information-component/information-component';
 import { FirstComponent } from './information-component/first-component/first-component';
 import { SecondComponent } from './information-component/second-component/second-component';
+import { FourthComponent } from './information-component/fourth-component/fourth-component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -12,7 +13,8 @@ const routes: Routes = [
 children:
 [
   {path:'component1', component: FirstComponent},
-  {path:'component2', component: SecondComponent}
+  {path:'component2', component: SecondComponent},
+  {path:'component4', component: FourthComponent}
 ]},
 {path:'**', redirectTo:'/home',pathMatch:'full'}
 ];

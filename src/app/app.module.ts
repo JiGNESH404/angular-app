@@ -7,6 +7,7 @@ import { HomeComponent } from './home-component/home-component';
 import { InformationComponent } from './information-component/information-component';
 import { FirstComponent } from './information-component/first-component/first-component';
 import { SecondComponent } from './information-component/second-component/second-component';
+import { SharedService } from './services/shared-service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SecondComponent } from './information-component/second-component/second
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

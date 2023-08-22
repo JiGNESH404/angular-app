@@ -19,84 +19,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="border">
-                <td class="table-content">1</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Mark</a></td>
-                <td class="table-content">Ruffalo</td>
-                <td class="table-content">California</td>
-                <td class="table-content">45</td>
+              <tr *ngFor="let patient of this.patients" class="border">
+                <td class="table-content">{{patient.id}}</td>
+                <td class="table-content"><a (click)="setSelectedPatient(patient)" style="color: #708090;" [routerLink]="['/information/component1']">{{patient.firstName}}</a></td>
+                <td class="table-content">{{patient.lastName}}</td>
+                <td class="table-content">{{patient.city}}</td>
+                <td class="table-content">{{patient.age}}</td>
               </tr>
-              <tr class="border">
-                <td class="table-content ">2</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Jacob</a></td>
-                <td class="table-content">Thornton</td>
-                <td class="table-content">Prayagraj</td>
-                <td class="table-content">26</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">3</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Larry</a></td>
-                <td class="table-content">Wild</td>
-                <td class="table-content">Pune</td>
-                <td class="table-content">24</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">4</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Lucifer</a></td>
-                <td class="table-content">accusamus</td>
-                <td class="table-content">Bangalore</td>
-                <td class="table-content">95</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">5</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Jack</a></td>
-                <td class="table-content">Keith</td>
-                <td class="table-content">Gandhinagar</td>
-                <td class="table-content">28</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">6</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">iusto</a></td>
-                <td class="table-content">Wild</td>
-                <td class="table-content">Mumbai</td>
-                <td class="table-content">35</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">7</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Dr.</a></td>
-                <td class="table-content">Otto</td>
-                <td class="table-content">Surat</td>
-                <td class="table-content">82</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">8</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">John</a></td>
-                <td class="table-content">Jaconaa</td>
-                <td class="table-content">Scranton</td>
-                <td class="table-content">52</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">9</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Larry</a></td>
-                <td class="table-content">Page</td>
-                <td class="table-content">Chicago</td>
-                <td class="table-content">27</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">10</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Amber</a></td>
-                <td class="table-content">Heard</td>
-                <td class="table-content">Pennsylvania</td>
-                <td class="table-content">52</td>
-              </tr>
-              <tr class="border">
-                <td class="table-content ">11</td>
-                <td class="table-content"><a style="color: #708090;" [routerLink]="['/information']">Nimesh</a></td>
-                <td class="table-content">Patel</td>
-                <td class="table-content">Long Island</td>
-                <td class="table-content">27</td>
-              </tr>
-              
             </tbody>
           </table>
         </div>
