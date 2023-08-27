@@ -1,4 +1,4 @@
-body, html {
+.parent-div {
     height: 100vh;
     margin: 0;
   }
@@ -17,7 +17,7 @@ body, html {
   .main-content {
     flex: 1;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 16px;
   }
 
   table {

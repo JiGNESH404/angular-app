@@ -21,7 +21,7 @@
             <tbody>
               <tr *ngFor="let patient of this.patients" class="border">
                 <td class="table-content">{{patient.id}}</td>
-                <td class="table-content"><a (click)="setSelectedPatient(patient)" style="color: #708090;" [routerLink]="['/information/component1']">{{patient.firstName}}</a></td>
+                <td class="table-content"><a (click)="setSelectedPatient(patient)" style="color: #708090;" [routerLink]="['/information/'+patient.uid+'/component1']">{{patient.firstName}}</a></td>
                 <td class="table-content">{{patient.lastName}}</td>
                 <td class="table-content">{{patient.city}}</td>
                 <td class="table-content">{{patient.age}}</td>

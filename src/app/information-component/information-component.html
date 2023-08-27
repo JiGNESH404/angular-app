@@ -1,11 +1,10 @@
-<html>
-<body>
-<div class="container">
-    <div class="h-full sidebar overflow-auto">
+<div class ="parent-div overflow-hidden ">
+<div class="container overflow-hidden">
+    <div class="h-full sidebar">
         <table>
             <tr *ngFor="let p of this._sharedService.patients" class="my-4">
               <td>
-                <div class=" cursor-pointer flex flex-row sidebar-item items-center">
+                <div (click)="selectPatient(p)" class=" cursor-pointer flex flex-row sidebar-item items-center">
                   <div class="w-10 h-10">
                     <img class="w-full h-full object-cover rounded" src="https://cdn.pixabay.com/photo/2017/11/10/05/48/user-2935527_1280.png" alt="Default avatar">
                   </div>
@@ -17,7 +16,7 @@
             </tr>
           </table>
     </div>
-    <div class="main-content">
+    <div class="main-content overflow-hidden">
       <div class="banner mb-4 text-black p-2 rounded">
         <p>This will show important information.</p>
     </div>
@@ -64,5 +63,4 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+</div>
